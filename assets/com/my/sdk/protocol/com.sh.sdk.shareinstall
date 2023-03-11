@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root name="protocol">
+    <control name="pn" code="com.sh.sdk.shareinstall" />
+    <control name="fcn" code="com.sh.sdk.shareinstall.support.ModelConfig" />
+</root>

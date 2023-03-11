@@ -1,0 +1,14 @@
+.class public interface abstract Lcom/nimbusds/jose/jca/JCAAware;
+.super Ljava/lang/Object;
+.source "JCAAware.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Lcom/nimbusds/jose/jca/JCAContext;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation

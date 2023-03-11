@@ -1,0 +1,5 @@
+{
+  "name":  "echoJava",
+  "class": "com.elotandroid.MyExtension",
+  "jsapi": "myextension.js"
+}

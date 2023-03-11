@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rl_root" android:background="@color/_fff6f6f6" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_top" android:paddingLeft="18.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="19.0sp" android:textColor="@color/_ff222222" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock_screen_hot_news" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="27.0sp" android:textColor="@color/_ff222222" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ll_date" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="10.0sp" android:textColor="@color/_ff666666" android:gravity="right" android:layout_gravity="right" android:id="@id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/_ff666666" android:gravity="right" android:layout_gravity="right" android:id="@id/tv_week" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.lockscreen.news.ui.LockScreenNewsView android:id="@id/lock_screen_news_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ll_exit" android:layout_below="@id/rl_top" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_exit" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/_ffe8e8e8" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/_ff666666" android:gravity="center" android:layout_gravity="center" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lock_screen_exit" android:drawableLeft="@drawable/si_ic_exit_lock_screen" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+</RelativeLayout>

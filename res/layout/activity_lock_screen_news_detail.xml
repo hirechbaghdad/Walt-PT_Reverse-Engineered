@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/ll_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/_ff222222" android:gravity="center_vertical" android:id="@id/tv_back" android:layout_width="wrap_content" android:layout_height="47.0dip" android:layout_marginLeft="15.0dip" android:text="@string/lock_screen_hot_news" android:drawableLeft="@drawable/si_ic_back" />
+    <View style="@style/v_line" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.lockscreen.news.widget.webView.ProgressBarWebView android:id="@id/pbwv" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:visibility="gone" layout="@layout/layout_lock_screen_news_error" />
+    </FrameLayout>
+</LinearLayout>

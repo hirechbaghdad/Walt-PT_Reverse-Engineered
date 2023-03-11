@@ -1,0 +1,93 @@
+.class Landroid/support/v4/media/TransportMediator$2;
+.super Ljava/lang/Object;
+.source "TransportMediator.java"
+
+# interfaces
+.implements Landroid/view/KeyEvent$Callback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/support/v4/media/TransportMediator;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Landroid/support/v4/media/TransportMediator;
+
+
+# virtual methods
+.method public onKeyDown(ILandroid/view/KeyEvent;)Z
+    .locals 1
+
+    .line 133
+    invoke-static {p1}, Landroid/support/v4/media/TransportMediator;->a(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$2;->a:Landroid/support/v4/media/TransportMediator;
+
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->a:Landroid/support/v4/media/TransportPerformer;
+
+    invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/TransportPerformer;->a(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method
+
+.method public onKeyLongPress(ILandroid/view/KeyEvent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public onKeyMultiple(IILandroid/view/KeyEvent;)Z
+    .locals 0
+
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public onKeyUp(ILandroid/view/KeyEvent;)Z
+    .locals 1
+
+    .line 142
+    invoke-static {p1}, Landroid/support/v4/media/TransportMediator;->a(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Landroid/support/v4/media/TransportMediator$2;->a:Landroid/support/v4/media/TransportMediator;
+
+    iget-object v0, v0, Landroid/support/v4/media/TransportMediator;->a:Landroid/support/v4/media/TransportPerformer;
+
+    invoke-virtual {v0, p1, p2}, Landroid/support/v4/media/TransportPerformer;->b(ILandroid/view/KeyEvent;)Z
+
+    move-result p1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
+.end method

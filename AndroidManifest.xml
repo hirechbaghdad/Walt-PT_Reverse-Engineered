@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:hardwareAccelerated="true" package="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn" platformBuildVersionCode="2" platformBuildVersionName="1.1">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MONUN_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <permission android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="Wolt-PT" android:launchMode="singleTask" android:name="com.mb.rn.activity.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:label="Wolt-PT" android:name="com.mb.rn.activity.ReactMainActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme" android:usesCleartextTraffic="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="myNative"/>
+                <data android:scheme="NULL"/>
+                <data android:scheme="stbcb156e84c54e55d"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.mb.rn.activity.TransparentActivity" android:screenOrientation="portrait" android:theme="@style/activity_styles" android:usesCleartextTraffic="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <provider android:authorities="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value=""/>
+        <meta-data android:name="com.openinstall.APP_KEY" android:value="NULL"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <meta-data android:name="com.mb.rn.shareinstall.APP_KEY" android:value="NULL"/>
+        <meta-data android:name="com.mb.rn.sharetrace.APP_KEY" android:value="NULL"/>
+        <meta-data android:name="yuncengappkey" android:value="qXNRKdtc4X+E5rtRhxXRZdyjnxfCq6KFuL_934-3k1EZnYLuTjRyCcBSZtctpsCb1m+rqYjQeQQq8cFMPDtPaZBtvj0j_6z7AHGE3W2rlxS78wRS0SxeeIkTZFNQ2t05MLi75X2F1yGOcTGD79YTfMzT9h6H+NZ0I-5qTT4pe7y8O03tNN3aSW3t5RhBioDVEm-MszbQ2fL359gg4IyF4Q4qzAKj626pFPncefgFXdCqreC3k79PtwfJfHkr2ZXo-x7PLnlJ5srUesH1sDuoBrXyNulQAmB4igIB3Rcnf428v9vnobOcpYU5TLD8_CqbvH7DeMlyq+hu3Qm3xwqk_G7EywY8E_WBDh1kHWxFaslJ+pyPvrpapwcCva9-3BPkG0q7E-lmwsS2OvmiX0HOA7TwKCa"/>
+        <meta-data android:name="groupname" android:value="Auto118999.21gjjn2413.ftnormal05ab.com"/>
+        <meta-data android:name="dip" android:value="wz110"/>
+        <meta-data android:name="dport" android:value="80"/>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="cn.app.client.activity.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent"/>
+        <service android:label="dexopt" android:name="com.tencent.smtt.export.external.DexClassLoaderProviderService" android:process=":dexopt"/>
+        <activity android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="cn.jpush.android.service.JNotifyActivity" android:taskAffinity="jpush.custom" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.JNotifyActivity"/>
+                <category android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jiguang.plugins.push.receiver.JPushModuleReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.RECEIVE_MESSAGE"/>
+                <category android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jiguang.plugins.push.receiver.JPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <category android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.SchedulerReceiver"/>
+        <provider android:authorities="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.rnshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="cl.json.RNShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_download_paths"/>
+        </provider>
+        <provider android:authorities="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="cn.jpush.android.service.PushService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:name="cn.jiguang.plugins.service.JCoreModuleService">
+            <intent-filter>
+                <action android:name="cn.jiguang.user.service.action"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5OpenAuthActivity" android:screenOrientation="behind" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:authorities="com.TKAwsWXQHSqbkK_WCQreEs3t4CAZ_YGz1JPdC9Qop2U_uirn47xRXSn.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.sh.sdk.shareinstall.provider.ShareInstallProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/shareinstall_file_paths"/>
+        </provider>
+        <activity android:description="@string/lock_screen_hot_news" android:exported="true" android:icon="@drawable/si_news_logo" android:label="@string/lock_screen_hot_news" android:launchMode="singleTop" android:name="com.lockscreen.news.ui.LockScreenNewsActivity" android:process="com.lockscreen.news" android:screenOrientation="portrait" android:taskAffinity="com.lockscreen.news" android:theme="@style/NoTitle"/>
+        <activity android:exported="true" android:icon="@drawable/si_news_logo" android:label="@string/lock_screen_hot_news" android:launchMode="singleTop" android:name="com.lockscreen.news.ui.LockScreenNewsDetailActivity" android:process="com.lockscreen.news" android:screenOrientation="portrait" android:taskAffinity="com.lockscreen.news" android:theme="@style/NoTitle"/>
+    </application>
+</manifest>
